@@ -1,0 +1,19 @@
+$ docker run -dit ubuntu sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+fc1d566b93744bde147f8998272425b4cf9209dc653876789882dbe71b2f6296
+
+$ docker exec -it friendly_mcnulty bash
+root@fc1d566b9374:/# apt-get update
+root@fc1d566b9374:/# apt-get upgrade
+root@fc1d566b9374:/# apt install curl
+root@fc1d566b9374:/# exit
+
+$ docker attach friendly_mcnulty
+helsinki.fi
+Searching..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
+</body></html>
