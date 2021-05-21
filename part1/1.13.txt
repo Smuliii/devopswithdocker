@@ -1,0 +1,4 @@
+$ cd material-applications/example-backend/
+$ docker build -t example-backend -f ../../part1/1.13/Dockerfile .
+
+$ docker run -p 8080:8080 example-backend

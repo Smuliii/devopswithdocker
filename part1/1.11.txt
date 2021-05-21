@@ -1,3 +1,4 @@
-$ docker build -t spring-example-project .
+$ cd material-applications/spring-example-project/
+$ docker build -t spring-example-project -f ../../part1/1.11/Dockerfile .
 
 $ docker run -p 8080:8080 spring-example-project

@@ -1,0 +1,4 @@
+$ cd material-applications/example-frontend/
+$ docker build -t example-frontend -f ../../part1/1.12/Dockerfile .
+
+$ docker run -p 5000:5000 example-frontend
