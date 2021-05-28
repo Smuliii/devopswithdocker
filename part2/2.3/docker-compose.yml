@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  backend:
+    build:
+      context: ../../material-applications/example-backend/
+      dockerfile: ../../part1/1.14/backend.Dockerfile
+    ports:
+      - "8080:8080"
+  frontend:
+    build:
+      context: ../../material-applications/example-frontend/
+      dockerfile: ../../part1/1.14/frontend.Dockerfile
+    ports:
+      - "5000:5000"
