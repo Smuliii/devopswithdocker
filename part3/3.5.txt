@@ -1,0 +1,2 @@
+backend: 227MB (ubuntu) -> 881MB (golang:latest) -> 320MB (golang:alpine)
+frontend: 446MB (ubuntu) -> 1.15GB (node:latest) -> 352MB (node:alpine)
